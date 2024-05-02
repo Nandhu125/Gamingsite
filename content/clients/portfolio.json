@@ -1,0 +1,26 @@
+{
+  "portfolioImages": [
+    { 
+      "name":"P1",
+      "desktopPortfolio": "/src/assets/Images/portfolio/p1d.png",
+      "mobilePortfolio": "/src/assets/Images/portfolio/p1m.png" 
+    },
+    {
+      "desktopPortfolio": "/src/assets/Images/portfolio/p2d.png",
+      "mobilePortfolio": "/src/assets/Images/portfolio/p2m.jpeg" 
+
+    },
+    {
+      "desktopPortfolio": "/src/assets/Images/portfolio/p3d.png",
+      "mobilePortfolio": "/src/assets/Images/portfolio/p3m.jpeg" 
+
+    },
+    {
+      "desktopPortfolio": "/src/assets/Images/portfolio/p4d.png",
+      "mobilePortfolio": "/src/assets/Images/portfolio/p4m.jpeg" 
+    }
+
+
+  ],
+  "_template": "portfolioImages"
+}

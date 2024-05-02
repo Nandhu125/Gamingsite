@@ -1,0 +1,25 @@
+[
+  {
+    "accommodation_type": "Executive Rooms",
+    "description": "Spanning 310 sq ft, available with both king and twin bed options, our Executive Rooms redefine comfort and elegance.",
+    "amenities": ["AC", "Room Service", "Wifi Access", "TV & Audio", "24/7 Service", "Parking"],
+    "price_starting_from": "₹4,500",
+    "rate_type": "per day",
+    "guests_count": 4,
+    "image_url": "/images/resorts/r1.jpg",
+    "beds_count": "One King Bed, One Sofa cum bed",
+    "brief_desc": "The Executive Rooms at Shoolin Grand are meticulously designed and thoughtfully arranged to offer guests the utmost comfort and a perfect ambiance. Each room features a spacious king-size bed, ample lighting, a functional writing desk, an LED TV with DTH connection, a tea and coffee maker, Wi-Fi access, and a private bathroom with a personalized geyser, among other amenities. Additionally, guests can enjoy the luxury of a private balcony attached to their room, providing an extra space for relaxation and enjoyment."
+  },
+  {
+    "accommodation_type": "The Luxury Suite Room",
+    "description": "For those seeking an indulgent escape, our Luxury Suites offer spacious living with separate bedrooms, private bathrooms, and balconies, furnished to the highest standard.",
+    "amenities": ["AC", "Room Service", "Wifi Access", "TV & Audio", "24/7 Service", "Parking"],
+    "price_starting_from": "₹2,500",
+    "rate_type": "per day",
+    "guests_count": 2,
+    "image_url": "/images/resorts/r2.jpg",
+    "beds_count": "One King Bed",
+    "brief_desc":"The Luxury Suite at Shoolin Grand epitomizes luxury. It's exquisitely furnished with premium amenities, making it irresistible to spend time indoors. Ideal for corporate guests, families, and anyone who craves luxury and comfort. This suite boasts a bedroom with a private bathroom and balcony, along with a separate living room featuring its own private bathroom and balcony. You'll discover a mini refrigerator, electronic safe, modern lighting, LED TVs in both rooms, a cozy sitting area, and a convenient writing table, among other amenities, ensuring your stay is nothing short of exceptional.."
+  }
+
+]

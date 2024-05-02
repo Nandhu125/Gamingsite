@@ -1,0 +1,87 @@
+---
+// import '../styles/bootstrap.min.css';
+// import '../styles/font-awesome.min.css'
+
+// import '../styles/animate.css';
+// import '../styles/owl.carousel.css'
+// import '../styles/style.css';
+// const props = Astro.props;
+// import '../styles/all.min.css';
+import { ViewTransitions } from 'astro:transitions';
+import SEO from './SEO.astro';
+// import WhatsAppButton from '@components/WhatsAppButton.astro';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  siteName?: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: string;
+  twitterHandle?: string;
+  slug?: string;
+}
+
+const {
+  title,
+  description,
+  siteName = 'The Shoolin Group',
+  canonical,
+  ogImage,
+  ogType,
+  twitterHandle,
+  slug,
+} = Astro.props as Props;
+---
+
+<html lang="en">
+  <head>
+    <SEO {...{ title, description, siteName, canonical, ogImage, ogType, twitterHandle, slug }} />
+    <!-- <ViewTransitions fallback="swap" /> -->
+    <!-- <script src="../scripts/gsap"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Museo-300&family=Museo-300+Condensed&family=Gilda+Display&display=swap"
+    />
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <base href="/" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+  </head>
+
+  <body class="antialiased">
+    <slot />
+
+    <!--====== Javascripts & Jquery ======-->
+    <script is:inline src="/js/jquery-3.2.1.min.js"></script>
+    <script is:inline src="/js/bootstrap.min.js"></script>
+    <script is:inline src="/js/owl.carousel.min.js"></script>
+    <script is:inline src="/js/jquery.marquee.min.js"></script>
+    <script is:inline src="/js/main.js"></script>
+    <script is:inline>
+      // Ensure that the DOM is fully loaded before executing the script
+      document.addEventListener('DOMContentLoaded', function () {
+        const lenis = new Lenis();
+
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+      });
+    </script>
+    <!-- <WhatsAppButton /> -->
+  </body>
+</html>

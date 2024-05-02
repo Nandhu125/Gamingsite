@@ -1,0 +1,21 @@
+---
+import Footer from '@components/Footer.astro';
+import Header from '@components/Header.astro';
+import Hero from '@components/Hero.astro';
+import Layout from 'src/layouts/Layout.astro';
+const props = Astro.props;
+
+
+// import client from '../../tina/__generated__/client';
+// const portfolioData = await client.queries.portfolio_section({ relativePath: 'portfolio.json' });
+// import img3 from '../assets/Images/new_images/image1.jpg';
+// import { tinaField } from 'tinacms/dist/react';
+---
+
+<Layout title="The Shoolin Group">
+
+    <Header />
+    <Hero />
+    <Footer />
+  
+</Layout>
