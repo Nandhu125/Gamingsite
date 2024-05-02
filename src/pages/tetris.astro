@@ -1,0 +1,140 @@
+---
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Layout from "src/layouts/Layout.astro";
+---
+<Layout title="Tetter">
+    <Header />
+    <div id="game-area">
+        <canvas id="game-area-canvas"></canvas>
+        <div id="right-side">
+            <div id="next">
+                Next
+            </div>
+            <div id="score-text">Score</div>
+            <div id ="score">
+                0
+            </div>
+        </div>
+        
+    </div>
+    <div id="game-menu">
+        <div id="game-title"> Tettet </div>
+        <div id="info">
+            <div class="textAlignRight">Press Any Key To Start</div>
+            <div class="textAlignLeft">A, S, D Are Navigate Keys</div>
+            <div class="textAlignRight">W - Change Position</div>
+            <div class="textAlignLeft">R - Reset Game</div>
+            <div id="game-over" class="textAlignCenter">Game Over!</div>
+            <div id="your-score" class="textAlignCenter">Your Score : </div>
+            <div id="score-table" class="textAlignCenter"></div>
+        </div>
+    </div>
+</Layout>
+
+<script is:inline  src="/js/tetter.js"></script>
+
+<style>
+    body {
+background-color:#31393c;
+color:#d8d78f;
+font-family: 'ZCOOL KuaiLe', cursive;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+}
+
+#game-area {
+width:800px;
+height: 600px;
+margin-left:auto;
+margin-right:auto;
+display:none;
+}
+
+#game-area-canvas {
+background-color:#66767c;
+display:table;
+float:left;
+margin:0 auto;
+}
+
+#right-side {
+float:left;
+width:200px;
+height:100%;
+position: relative;
+top: -600px;
+left: 600px;
+}
+
+#next {
+height: 50px;
+background-color: #57656a;
+color: #eee;
+font-size:24px;
+text-align:center;
+line-height: 50px;
+margin-bottom: 450px;
+}
+
+#score-text {
+height: 50px;
+background-color: #57656a;
+color: #eee;
+font-size:24px;
+text-align:center;
+line-height: 50px;
+}
+
+#score {
+height: 50px;
+/*background-color:#ffb866;*/
+background-color:#8aa79e;
+color:#eee;
+font-size: 32px;
+text-align:center;
+line-height: 50px;
+}
+
+#game-menu {
+width: 500px;
+height: 300px;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-top: -150px; 
+margin-left: -250px;
+}
+
+#game-title {
+font-size: 100px;
+text-align:center;
+}
+
+.textAlignRight {
+text-align: right;
+}
+
+.textAlignCenter {
+text-align: center;
+}
+
+.textAlignLeft {
+text-align: left
+}
+
+#game-over {
+display:none;
+color: #ff0505;
+font-size: 20px;
+}
+
+#your-score {
+display:none;
+}
+
+#score-table {
+display:none;
+}
+</style>
