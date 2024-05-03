@@ -9,6 +9,12 @@
 /* Template default CSS
 /*---------------------------*/
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 html,
 body {
 	height: 100%;
@@ -717,7 +723,7 @@ ol {
 ------------------------*/
 
 .footer-top-section {
-	background-image: url("../img/pattern.png");
+	background-image: url("../images/pattern.png");
 	background-repeat: repeat;
 	padding: 72px 0;
 }
