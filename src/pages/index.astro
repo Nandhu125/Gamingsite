@@ -3,6 +3,7 @@ import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
 import Hero from '@components/Hero.astro';
 import Layout from 'src/layouts/Layout.astro';
+// import Chatbot from "flowise-embed/dist/web.js";
 const props = Astro.props;
 
 
@@ -18,4 +19,13 @@ const props = Astro.props;
     <Hero />
     <Footer />
   
+    <script is:inline type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "6d5293eb-1af7-4ea4-a936-e921e160d489",
+            apiHost: "",
+        })
+    </script>
 </Layout>
+
+
