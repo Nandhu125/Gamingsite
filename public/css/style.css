@@ -1389,7 +1389,11 @@ ol {
 		display: block;
 		float: right;
 		cursor: pointer;
-		font-size: 25px;
+		font-size: 30px;
+		position: absolute;
+		bottom: 0em;
+		top: -0.4em;
+		right: 0.7em;
 	}
 	.user-panel {
 		display: none;
